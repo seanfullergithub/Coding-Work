@@ -1,0 +1,81 @@
+Game Description: 
+A keyboard typing game that helps you learn how to type faster.
+You are a astronaut whos rocketship is stranded in space. 
+You must fix your rocket so you can get back home. 
+You do this through a series of typing tasks that help repair your rocket. 
+As you go on the typing prompts get longer and you must complete them in quicker time. 
+If you fail too much your repair meter will drop rocket adn the rocket will explode ending the game.
+If you manage to beat all the typing prompts then you will successfull repair your rocket then fly home.
+
+P5.js code we might use:
+
+1.  Simulate: Particle(https://editor.p5js.org/p5/sketches/l77qTHokQFB)
+    Creates small grey circle particles that float around a canvas. 
+    Could be used for our game over screen when the rocket explodes. 
+    Might make cool fire effect if we change color of circles to orange.
+    This could also be used to act as the stars in space,but it is not needed. It would just be an extra detail to add.
+
+2.  Dom: Slider(https://editor.p5js.org/p5/sketches/JbqVBEIxCZG)
+    Creates purple background with red, green, blue sliders in top left corner of screen. 
+    Sliding the sliders will change the background color by increasing or decreasing the respective color of each slider. 
+    May need the slider element for the progress bar. Not to be controlled by the user but to slide back and forth depending on positive or negative progress.
+
+3.  Objects: Objects Array(https://editor.p5js.org/p5/sketches/twis84jqSnj)
+    Makes radomly positioned and sized white circles all over a navy background that move very small amounts in different directions making it look like they are jittering. 
+    The jittering effect is the only thing I think we could use here. Could be a nice effect to add to the rocket if your repair meeter is low and it's about to blow up soon.
+    Could also be used to act as stars in space. Alternatively, it can act as meteor obstacles which have no control and can contribute to damaging the ship and effecting the progress of the game.
+
+4.  Objects: Multiple Objects(https://editor.p5js.org/p5/sketches/5a4ZOwYX9q9)
+    Four small circles placed randomly on dark navy background. 
+    Move small amounts in various directions. 
+    Once again, the jittering here could be used to make our rocket jitter if the repair meter is low.
+
+5.  Objects: Objects(https://editor.p5js.org/p5/sketches/Q-yvNeNvRFQ)
+    A singular small white circle on a navy background. 
+    Moves in various directions making it jitter. 
+    Jitter code is what we would use for our rocket when the repair meter is low.
+
+6.  Objects: Car Instances(https://editor.p5js.org/p5/sketches/Sp9tQ_Zl7Pv)
+    Vertical pale sage background with three rectangles--blue, yellow, and grey--moving across the screen horizontally at different speeds. 
+    Could implement a version to make our rocket move across screen during launch phase. 
+
+7.  Motion: Moving on Curves(https://editor.p5js.org/p5/sketches/EjZJbu1fdvp)
+    White circle travels across the grey screen on the curve y=x^4. 
+    It leaves behind an outline of its path. 
+    Code could be useful to help create our rockets launch animation and leave a trail behind it as it launches.
+
+8.  DOM: Modify DOM(https://editor.p5js.org/p5/sketches/QoIHBKZm3XW)
+    Words in black font jittering on a white background. 
+    Could be used for typing part of game and when you fail more the words become more jittery like the computer is starting to breakdown.
+
+9.  Typography: Letters(https://editor.p5js.org/p5/sketches/BZf_6Wa6d3i)
+    Letters and characters on a grey background. 
+    All are white except the vowels are pink. 
+    May need to make typing prompts show up in the game.
+    This will be needed in our project to project the letters which the user has typed onto the page to display and tell if correct or incorrect.
+
+10. createSlider()(https://p5js.org/reference/#/p5/createSlider)
+    For the slider, we were thinking of setting it to act as the slider for displaying the progress of the game(as seen directly above the keyboard). 
+    The location of the slider’s dial will depend on how well the typing progress is being done.
+
+11. keyIsPressed(https://p5js.org/reference/#/p5/keyIsPressed)
+    The boolean system variable keyIsPressed is true if any key is pressed and false if no keys are pressed.
+    We will need this as this is a typing game where many keys will be pressed. Need key inputs to register.
+
+12. Lights: Directional(https://editor.p5js.org/p5/sketches/Lights:_Directional)
+    May want to have this for lighting purposes on the moon or on
+    the sky towards the endgame area.
+
+13. Lights: Mixture(https://editor.p5js.org/p5/sketches/Lights:_Mixture)
+    Will probably want this for the lamination of the cursor, keyboard letter display, or the Rocketship.
+
+14. Transform: Rotate(https://editor.p5js.org/p5/sketches/Transform:_Rotate)
+    Might be needed at some point to rotate the Rocketship.
+
+15. Typography: Words(https://editor.p5js.org/p5/sketches/Typography:_Words)
+    We will either need this to re-iterate the words which the user
+    has typed to display on the page. Also for text on the canvas
+    such as “Game Over” etc.
+    
+16. Input: Keyboard(https://editor.p5js.org/p5/sketches/Input:_Keyboard)
+    May be needed for the keyboard keys pressed to affect certain aspects of the game.
